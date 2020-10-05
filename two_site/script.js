@@ -20,6 +20,16 @@ $(function () {
         $('.terminal').show();
     });
 });
+
+$(function () {
+    $('.click-kakaotalk').click(function () {
+        $('.kakao-overlay-computer').hide();
+    });
+    $('.show(1)').click(function () {
+        $('.show(1000)').show();
+    });
+});
+
 // 클릭 이벤트 온 오프
 
 var aText = new Array(
@@ -63,12 +73,6 @@ function typewriter() {
     }
 }
 
-$(function () {
-    $(".terminal").draggable();
-});
-$(function () {
-    $(".overlay-computer").draggable();
-});
 
 // const openButton = document.getElementById("folder-computer");
 // const modal = document.querySelector(".overlay-computer");
