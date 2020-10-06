@@ -138,6 +138,17 @@
     </div>
     <!-- terminal 페이지 -->
 
+    <!-- 카카오톡 페이지 -->
+    <div class="kakao-box">
+        <div class="kakao-box__column">
+            <div class="kakao-box__column--box">
+                <iframe name="test" width="440" height="750" src="http://smap.or.kr/kakao-talk/">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <!-- 카카오톡 페이지 -->
+
     <!-- Folder 페이지 -->
     <div class="overlay-computer" id="overlay-computer">
         <div class="fluid-container">
@@ -421,43 +432,8 @@
         </div>
         <footer class="nav navbar-inverse navbar-fixed-bottom footer text-center">
             <div class="fluid-container">
-
             </div>
         </footer>
-        <div class="box" id="kakao-overlay-computer"
-            style="display: block; width: 404px; right: 925; height: 702; bottom: auto; left: 920;">
-            <div class="status-bar">
-                <div class="status-bar__column">
-                    <span>No Service</span>
-                    <i class="fas fa-wifi"></i>
-                </div>
-                <div class="status-bar__column js-clock">
-                    <span>00:00</span>
-                    <!-- clock -> To Do: Vainilla_JS -->
-                </div>
-                <div class="status-bar__column js-battery">
-                    <span>51%</span>
-                    <i class="fas fa-battery-full fa-lg"></i>
-                    <i class="fas fa-bolt"></i>
-                    <!-- To Do: Vainilla_JS -->
-                </div>
-            </div>
-
-            <header class="welcome-header">
-                <h1 class="welcome-header__title">Kakao Talk</h1>
-                <div class="welcome-header__text">Welcome to KaKao Talk</br>please log in with your email or phone
-                    number
-                    </br>ヽ(〃'▽'〃)ﾉ
-            </header>
-
-            <form action="./friends.html" method="get" id="login-form">
-                <input name="username" type="text" placeholder="Email or Phone number" />
-                <input name="password" type="password" placeholder="Password" />
-                <input type="submit" value="Log In" />
-                <input type="submit" value="Sign Up" />
-                <a href="#" target="_blank">Find Kakao Account or Password</a>
-            </form>
-        </div>
 
     </div>
     <!-- Folder 페이지 -->
@@ -475,6 +451,12 @@
         function dbl_click(href) {
             location.href = href;
         }
+    </script>
+
+    <script>
+        $(function () {
+            $(".terminal").draggable();
+        });
     </script>
 </body>
 

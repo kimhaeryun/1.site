@@ -920,3 +920,11 @@ display: none;
 /* folder css */
 
 
+/* 카카오톡 */
+.kakao-box__column--box{
+  background-color: white;
+  position: absolute;
+  left: 70%;
+  top: 5%
+}
+/* 카카오톡 */

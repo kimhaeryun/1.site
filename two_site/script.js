@@ -21,14 +21,6 @@ $(function () {
     });
 });
 
-$(function () {
-    $('.click-kakaotalk').click(function () {
-        $('.kakao-overlay-computer').hide();
-    });
-    $('.show(1)').click(function () {
-        $('.show(1000)').show();
-    });
-});
 
 // 클릭 이벤트 온 오프
 
@@ -72,6 +64,13 @@ function typewriter() {
         setTimeout("typewriter()", iSpeed);
     }
 }
+
+$(function () {
+    $(".wrapper").draggable();
+});
+$(function () {
+    $(".kakao-box__column iframe").draggable();
+});
 
 
 // const openButton = document.getElementById("folder-computer");
